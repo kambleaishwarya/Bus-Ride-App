@@ -1,0 +1,6 @@
+/home/ptspl18/BusRideApp/Bus-Ride-App/src/main/java/com/pinnacle/bus/BusRideBookingApplication.java
+/home/ptspl18/BusRideApp/Bus-Ride-App/src/main/java/com/pinnacle/bus/controller/VehicleController.java
+/home/ptspl18/BusRideApp/Bus-Ride-App/src/main/java/com/pinnacle/bus/model/Vehicle.java
+/home/ptspl18/BusRideApp/Bus-Ride-App/src/main/java/com/pinnacle/bus/repository/VehicleRepository.java
+/home/ptspl18/BusRideApp/Bus-Ride-App/src/main/java/com/pinnacle/bus/service/VehicleService.java
+/home/ptspl18/BusRideApp/Bus-Ride-App/src/main/java/com/pinnacle/bus/service/impl/VehicleServiceImpl.java
