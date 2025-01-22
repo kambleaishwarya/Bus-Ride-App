@@ -32,7 +32,7 @@ public class VehicleServiceImpl implements VehicleService {
     }
 
     @Override
-    public Optional<Vehicle> updateVehicle(Long id, Vehicle vehicleDetails) {
+    public Optional<Vehicle> updateVehicle(String id, Vehicle vehicleDetails) {
         Optional<Vehicle> vehicle = vehicleRepository.findById(id);
         vehicle.ifPresent(v -> {
             v.setName(vehicleDetails.getName());
@@ -45,8 +45,7 @@ public class VehicleServiceImpl implements VehicleService {
     }
 
     @Override
-    public void deleteVehicle(Long id) {
+    public void deleteVehicle(String id) {
         vehicleRepository.deleteById(id);
     }
-
 }

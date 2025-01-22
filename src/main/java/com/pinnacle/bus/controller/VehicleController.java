@@ -45,14 +45,14 @@ public class VehicleController {
     }
 
     @PutMapping("/vehicles/{id}")
-    public ResponseEntity<String> updateVehicle(@PathVariable Long id, @RequestBody Vehicle vehicleDetails) {
+    public ResponseEntity<String> updateVehicle(@PathVariable String id, @RequestBody Vehicle vehicleDetails) {
         Optional<Vehicle> updatedVehicle = vehicleService.updateVehicle(id, vehicleDetails);
         return updatedVehicle.map(v -> ResponseEntity.ok("Vehicle updated successfully"))
                 .orElseGet(() -> ResponseEntity.status(404).body("Vehicle not found"));
     }
 
     @DeleteMapping("/vehicles/{id}")
-    public ResponseEntity<String> deleteVehicle(@PathVariable Long id) {
+    public ResponseEntity<String> deleteVehicle(@PathVariable String id) {
         vehicleService.deleteVehicle(id);
         return ResponseEntity.status(200).body("Vehicle deleted successfully");
     }
