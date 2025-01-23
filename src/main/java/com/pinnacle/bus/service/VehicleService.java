@@ -9,12 +9,15 @@ public interface VehicleService {
 
 	public List<Vehicle> getAllVehicles();
 
-	public Optional<Vehicle> getVehicleByNumber(String number);
+    // Method to get a vehicle by its number
+    public Optional<Vehicle> getVehicleByNumber(String number);
 
-	public Vehicle createVehicle(Vehicle vehicle);
+    // Method to create a vehicle
+    public Vehicle createVehicle(Vehicle vehicle);
 
-	public Optional<Vehicle> updateVehicle(Long id, Vehicle vehicleDetails);
+    // Method to update a vehicle by ID (changed from Long to String for MongoDB)
+    public Optional<Vehicle> updateVehicle(String id, Vehicle vehicleDetails);
 
-	public void deleteVehicle(Long id);
-
+    // Method to delete a vehicle by ID (changed from Long to String for MongoDB)
+    public void deleteVehicle(String id);
 }
