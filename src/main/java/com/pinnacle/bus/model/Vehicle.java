@@ -3,9 +3,7 @@ package com.pinnacle.bus.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-
-
-@Document(collection="vehicles")
+@Document(collection = "vehicles")
 public class Vehicle {
 
 	@Id
