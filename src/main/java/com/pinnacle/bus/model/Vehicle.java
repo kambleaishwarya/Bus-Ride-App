@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 
 
-@Document(collection="vehicles")
+@Document(collection = "vehicle")
 public class Vehicle {
 
 	@Id
@@ -16,6 +16,7 @@ public class Vehicle {
 	private String number;
 
 	private int seats;
+
 	private String type;
 
 	public Vehicle() {
