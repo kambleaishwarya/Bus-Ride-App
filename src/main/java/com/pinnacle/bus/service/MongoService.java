@@ -6,6 +6,5 @@ public interface  MongoService {
     Vehicle createVehicle(Vehicle vehicle);
     Vehicle getVehicleById(String id);
     Vehicle updateVehicle(String id, Vehicle vehicle);
-    void deleteVehicle(String id);
-    
+    void deleteVehicle(String id);  
 }
